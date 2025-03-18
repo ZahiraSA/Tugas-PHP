@@ -2,18 +2,16 @@
 // Playlist lagu Ambyar
 $musik = [
     ["galau", "Mesin Waktu - Budi Doremi"],
-    ["bersemangat", "Selamat Pagi - Ran"],
+    ["semangat", "Selamat Pagi - Ran"],
     ["marah", "Yang Patah Tumbuh, yang Hilang Berganti - Banda Neira"]
 ];
-
-$suasanaHati = ["galau", "bersemangat", "marah"];
+$perasaan = ["galau", "semangat", "marah"];
 
 echo "Playlist lagu Ambyar:<br>";
-foreach ($suasanaHati as $suasana) {
-    foreach ($musik as $lagu) {
-        if ($lagu[0] == $suasana) {
-            echo "Ambyar mendengarkan " . $suasana . ", maka ia mendengarkan " . $lagu[1] . "<br>";
-            break;
+foreach ($perasaan as $suasana) {
+foreach ($musik as $lagu) {
+     if ($lagu[0] == $suasana) {
+echo "Ambyar sedang " . $suasana . ", maka ia mendengarkan " . $lagu[1] . "<br>";
         }
     }
 }
